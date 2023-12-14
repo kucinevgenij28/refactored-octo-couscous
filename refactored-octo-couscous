@@ -1,0 +1,11 @@
+        var newState = currentState
+        
+        switch action {
+        case .change(let mask):
+            newState = changeMask(mask, in: newState)
+        case .createMask:
+            break
+        }
+        
+        return newState
+    }
